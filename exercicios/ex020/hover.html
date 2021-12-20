@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover em HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#d > p {
+           display: none; 
+        }
+        div#d:hover > p {
+            display: block;
+            color: rgb(255, 254, 254);
+            background-color: rgb(87, 87, 87);
+            width: 190px;
+        }
+        div#d:hover {
+            color: rgb(87, 87, 87);
+        }
+        /*EXEMPLO 2 | FEITO POR MIM!*/
+        #menu > #interno {
+            display: none;
+        }
+        #menu:hover > #interno {
+            display: block;
+            background-color: rgb(87, 87, 87);
+            color: white;
+            text-indent: 30px;
+            width: 200px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu" style="width: 20px;">
+        <img src="pontos.png" alt="" style="height: 20px; width: 20px;">
+        <div id="interno">
+            <p>login</p>
+            <p>cadastrar</p>
+            <p>ajuda</p>
+            <p>home</p>
+        </div>
+    </div>
+    <!-- |---------------------| -->
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o meuse sobre o texto abaixo</p>
+    <div id="d">
+        <p>TEXTO ESCONDIDO......</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

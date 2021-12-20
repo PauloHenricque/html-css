@@ -1,0 +1,5 @@
+Paleta de cores: #1A5C3D #83E1B5 #3DDB90 #355C4A #2FA870
+--------------------------------------------------------------------------------------------
+Fonte de H1: Bebas Neue: @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap'); 
+regra: font-family: 'Bakbak One', cursive;
+--------------------------------------------------------------------------------------------
