@@ -47,6 +47,9 @@ section {
     font-family: var(--fonte03);
     font-size: 3.5vw;
 }
+section > p {
+    padding-bottom: 2em;
+}
 footer {
     background-color: black;
     color: white;
