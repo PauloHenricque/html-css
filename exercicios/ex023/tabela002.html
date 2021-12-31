@@ -5,8 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+        table {
+            width: 500px;
+            padding: 10px;
+            border-collapse: collapse;
+            margin: auto;
+            background-color: #F8F9FA;
+        }
+        thead {
+            background-color: #EAECF0;
+            height: 60px;
+        }
+        td, th {
+            border: 1px solid rgb(179, 179, 179);
+            text-align: center;
+            padding: 10px;
+        }
+        .box {
+            margin: auto;
+            width: 500px;
+        }
+        .serif {
+            font-family: serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        <h2 class="serif">Lista dos 5 primeiros</h2>
+        <hr>
+        <table>
+            <caption>População das unidades</caption>
+            <thead>
+                <th>Posição</th>
+                <th>Unidade federativa</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td >São Paulo</td>
+                    <td>46 649 132</td>
+                    <td>21,9%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td>21 411 923</td>
+                    <td>10,1%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rio de Janeiro</td>
+                    <td>17 463 349</td>
+                    <td>8,2%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bahia</td>
+                    <td>14 985 284</td>
+                    <td>7,1%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Paraná</td>
+                    <td>11 597 484</td>
+                    <td>5,4%</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="serif">Por região</h2>
+        <hr>
+        <table>
+            <thead>
+                <th>Posição</th>
+                <th>Região</th>
+                <th>População</th>
+                <th>% da pop. total</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Região Sudeste</td>
+                    <td>89 632 912</td>
+                    <td>42,04%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Região Nordeste</td>
+                    <td>57 667 842</td>
+                    <td>27,09%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Região Sul</td>
+                    <td>30 402 587</td>
+                    <td>14,26%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Região Norte</td>
+                    <td>18 906 962</td>
+                    <td>8,82%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Região Centro-Oeste</td>
+                    <td>16 707 336</td>
+                    <td>7,79%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
