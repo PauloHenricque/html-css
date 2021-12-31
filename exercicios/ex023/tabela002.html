@@ -19,10 +19,16 @@
             border-collapse: collapse;
             margin: auto;
             background-color: #F8F9FA;
+            position: relative;
         }
         thead {
             background-color: #EAECF0;
             height: 60px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: #EAECF0;
         }
         td, th {
             border: 1px solid rgb(179, 179, 179);
@@ -36,19 +42,25 @@
         .serif {
             font-family: serif;
         }
+        tbody > tr:nth-child(even){
+            background-color: #d8dadd;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <div class="box">
-        <h2 class="serif">Lista dos 5 primeiros</h2>
+        <h2 class="serif">Lista</h2>
         <hr>
         <table>
             <caption>População das unidades</caption>
             <thead>
-                <th>Posição</th>
-                <th>Unidade federativa</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
             </thead>
             <tbody>
                 <tr>
@@ -81,7 +93,36 @@
                     <td>11 597 484</td>
                     <td>5,4%</td>
                 </tr>
-            </tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td>11 466 630</td>
+                    <td>5,4%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Pernambuco</td>
+                    <td>9 674 793</td>
+                    <td>4,5%</td>
+                </tr>
+                <tr>
+                    <td>8</td>	
+                    <td>Ceará</td>
+                    <td>9 240 580</td>
+                    <td>4,3%</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Pará</td>
+                    <td>8 777 124</td>
+                    <td>4,1%</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Santa Catarina</td>
+                    <td>7 338 473</td>
+                    <td>3,4%</td>
+                </tr>
         </table>
         <h2 class="serif">Por região</h2>
         <hr>
